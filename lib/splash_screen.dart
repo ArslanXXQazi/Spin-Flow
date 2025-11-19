@@ -33,8 +33,8 @@ class _SplashScreenState extends State<SplashScreen>
       duration: const Duration(seconds: 3),
     )..repeat();
 
-   // Navigate after 3 seconds
-    Future.delayed(const Duration(seconds: 3), () {
+   // Navigate after 2 seconds (optimized for better UX)
+    Future.delayed(const Duration(seconds: 2), () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
           PageRouteBuilder(

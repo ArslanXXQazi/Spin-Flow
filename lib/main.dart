@@ -11,6 +11,18 @@ import 'package:google_fonts/google_fonts.dart';
 import 'splash_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Set system UI overlay style for splash screen
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      systemNavigationBarColor: Color(0xFF1F1C2C),
+      systemNavigationBarIconBrightness: Brightness.light,
+    ),
+  );
+  
   runApp(const RandomPickerApp());
 }
 
